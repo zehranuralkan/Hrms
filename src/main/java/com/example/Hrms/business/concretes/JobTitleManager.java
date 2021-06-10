@@ -18,7 +18,9 @@ private JobTitleDao jobTitleDao;
 }
 	@Override
 	public List<JobTitle> getAll() {
-			return this.jobTitleDao.findAll();
+		return this.jobTitleDao.findAll();
 	}
+
+
 
 }
