@@ -6,4 +6,5 @@ import com.example.Hrms.entities.concretes.JobTitle;
 
 public interface JobTitleService {
 List<JobTitle> getAll();
+
 }
