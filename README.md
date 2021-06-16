@@ -26,3 +26,21 @@ Daha önce kayıtlı bir e-posta var ise kayıt gerçekleşmez. Kullanıcı bilg
 İSTER 6 : İş pozisyonları listelenebilmelidir. (Sadece tüm liste)
 
 ![1](https://user-images.githubusercontent.com/68777717/121607536-e1410680-ca58-11eb-9c44-c2ab24baf2ef.png)
+
+İSTER 7 : İş verenler sisteme iş ilanı ekleyebilmelidir.İş ilanı formunda; Seçilebilir listeden (dropdown) genel iş pozisyonu seçilebilmelidir.
+(Örneğin Java Developer)(Zorunlu).İş tanımı girişi yapılabilmelidir. (Örneğin; firmamız için JAVA, C# vb. dillere hakim....)(Zorunlu)
+Şehir bilgisi açılır listeden seçilebilmelidir. (Zorunlu).Maaş skalası için min-max girişi yapılabilmelidir. (Opsiyonel) Açık pozisyon adedi girişi yapılabilmelidir. (Zorunlu) Son başvuru tarihi girişi yapılabilmelidir.
+
+İSTER 8 : Sistemdeki tüm aktif iş ilanları listelenebilmelidir.Liste, tablo formunda gelmelidir.Listede firmadı, genel iş pozisyonu adı, açık pozisyon adedi, yayın tarihi, son başvuru tarihi bilgileri olmalıdır.
+
+İSTER 9 : Sistemdeki tüm aktif iş ilanları tarihe göre listelenebilmelidir.Liste, tablo formunda gelmelidir.Listede firmadı, genel iş pozisyonu adı, açık pozisyon adedi, yayın tarihi, son başvuru tarihi bilgileri olmalıdır.
+
+İSTER 10 : Sistemde bir firmaya ait tüm aktif iş ilanları listelenebilmelidir.Liste, tablo formunda gelmelidir.Listede firmadı, genel iş pozisyonu adı, açık pozisyon adedi, yayın tarihi, son başvuru tarihi bilgileri olmalıdır.
+
+İSTER 11 : İş verenler sistemdeki bir ilanı kapatabilmelidir. (Pasif ilan)
+
+
+![1](https://user-images.githubusercontent.com/68777717/122307563-43937e80-cf13-11eb-8e56-df362c31fac9.png)
+
+![2](https://user-images.githubusercontent.com/68777717/122307575-468e6f00-cf13-11eb-93f4-b11d273eabec.png)
+
