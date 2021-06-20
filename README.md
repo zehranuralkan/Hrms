@@ -56,3 +56,5 @@ Adaylar sisteme linkedin adreslerini girebilmelidir.
 Adaylar bildikleri programlama dillerini veya teknolojilerini sisteme girebilmelidir. (Programlama/Teknoloji adı) Örneğin; React
 Adaylar sisteme ön yazı ekleyebilmelidir. (Örneğin: Çalışmayı çok severim....)
 
+![9 hafta 3](https://user-images.githubusercontent.com/68777717/122690107-3686d000-d230-11eb-923c-b3d3bdf0bbe6.png)
+
