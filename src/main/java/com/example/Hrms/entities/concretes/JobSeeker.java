@@ -10,7 +10,9 @@ import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.NotBlank;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -39,6 +41,7 @@ public class JobSeeker extends User {
 
 	@Column(name="birth_year")
 	private int birthYear;
+
 	
 	@JsonIgnoreProperties
 	@OneToMany(mappedBy="jobSeeker")
@@ -51,4 +54,5 @@ public class JobSeeker extends User {
 	
 	@OneToMany(mappedBy = "jobSeeker")
 	private List<Background> backgrounds;
+
 }
