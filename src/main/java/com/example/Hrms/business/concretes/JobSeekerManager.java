@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.example.Hrms.business.Rules;
 import com.example.Hrms.business.abstracts.JobSeekerService;
 import com.example.Hrms.core.utilities.results.DataResult;
+import com.example.Hrms.core.utilities.results.ErrorDataResult;
 import com.example.Hrms.core.utilities.results.ErrorResult;
 import com.example.Hrms.core.utilities.results.Result;
 import com.example.Hrms.core.utilities.results.SuccessDataResult;
@@ -90,5 +91,15 @@ private Result eMailFormat(String email) {
 		return new ErrorResult("Geçersiz e mail adresi");
 	}
 	return new SuccessResult();
+}
+
+@Override
+public DataResult<JobSeeker> getById(int id) {
+	var result = this.jobSeekerDao.findById(id);
+	if (result.isEmpty())
+		return new ErrorDataResult<JobSeeker>("Kullanıcı bulunamadı");
+	else
+		return new SuccessDataResult<JobSeeker>(result.get());
+
 }
 }

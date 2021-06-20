@@ -2,37 +2,38 @@ package com.example.Hrms.entities.concretes;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 @Data
 @Entity
+@Table(name="programming_language")
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "jobAdvertisements"})
-@Table(name="jobtitles")
-public class JobTitle {
-	
+public class ProgrammingLanguage {
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 @Column(name="id")
 private int id;
 
-@Column(name="jobname")
-private String jobTitle;
+@Column(name="language")
+private String language;
 
-@OneToMany(mappedBy="jobTitle")
-private List<JobAdvertisement> jobAdvertisements;
+@JsonIgnore
+@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="programmingLanguage")
+private List<Background> backgrounds;
+
 }
