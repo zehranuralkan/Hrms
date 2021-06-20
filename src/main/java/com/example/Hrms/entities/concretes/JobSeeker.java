@@ -1,11 +1,18 @@
 package com.example.Hrms.entities.concretes;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.NotBlank;
+
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -34,4 +41,18 @@ public class JobSeeker extends User {
 
 	@Column(name="birth_year")
 	private int birthYear;
+
+	
+	@JsonIgnoreProperties
+	@OneToMany(mappedBy="jobSeeker")
+	private List<School> schools;
+	
+	
+	@JsonIgnoreProperties
+	@OneToMany(mappedBy="jobSeeker")
+	private List<JobExperience> jobExperience;
+	
+	@OneToMany(mappedBy = "jobSeeker")
+	private List<Background> backgrounds;
+
 }
